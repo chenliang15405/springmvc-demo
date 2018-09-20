@@ -21,13 +21,8 @@
   </servlet>
   <servlet-mapping>
       <servlet-name>dispatcher</servlet-name>
-      <url-pattern>/</url-pattern>
+      <url-pattern>*.action</url-pattern>
   </servlet-mapping>
-  <!-- springmvc的过滤器自动过滤掉了html,所以添加html后缀结尾的访问 -->
-    <servlet-mapping>
-        <servlet-name>html</servlet-name>
-        <url-pattern>*.html</url-pattern>
-    </servlet-mapping>
   <context-param>
       <param-name>contextConfigLocation</param-name>
       <param-value>classpath:springContext.xml</param-value>
